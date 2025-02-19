@@ -27,3 +27,7 @@ func _on_center_slider_y_value_changed(value: float) -> void:
 
 func _on_center_slider_z_value_changed(value: float) -> void:
 	child_planet.gravity_center[2] = int(value)
+
+
+func _on_mode_slider_value_changed(value: float) -> void:
+	child_planet.gravity_mode = int(value)

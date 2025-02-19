@@ -2,10 +2,10 @@
 This is a 3d scene showing a simple, simulated solar system through colliding dino heads. The game is simply playing with the gravity parameters to see how the dinos interacts.
 
 ## Functionality
-The assignment implemented custom gravity fields through the CustomGravity GD-extension node. The class overrides the _integrate_forces function to apply a gravitational force to the child 'planet' towards either a point of collision object, depending on the mode.
+The assignment implemented custom gravity fields through the CustomGravity GD-extension node. The class overrides the _integrate_forces function to apply a gravitational force to the child 'planet' towards either a point or collision object, depending on the mode.
 
 ## Controls
-r to restart, and menu widgets to interact with gravity parameters
+R to restart, and menu widgets to interact with gravity parameters
 
 ## How to run
 1. Clone this repository onto your computer

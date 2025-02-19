@@ -80,7 +80,7 @@ mass = 1000.0
 gravity_scale = 0.0
 
 [node name="Parent_CollisionShape" type="CollisionShape3D" parent="ParentPlanet"]
-transform = Transform3D(0.999998, -0.00200713, 9.0948e-13, 0.0020071, 0.999982, 0.00565484, -1.135e-05, -0.00565482, 0.999984, 0, 0, 0)
+transform = Transform3D(0.999998, -0.00200713, 9.0948e-13, 0.0020071, 0.999982, 0.00565484, -1.135e-05, -0.00565482, 0.999984, 5.27119e-14, 1.46677, 0.924958)
 shape = SubResource("SphereShape3D_b52eg")
 
 [node name="model" type="MeshInstance3D" parent="ParentPlanet"]
@@ -127,7 +127,7 @@ offset_left = 41.25
 offset_top = 290.0
 offset_right = 321.25
 offset_bottom = 335.0
-text = "Center of Gravity: "
+text = "Gravity Mode: "
 label_settings = SubResource("LabelSettings_fm133")
 
 [node name="Gravity_Strength_Slider" type="HSlider" parent="HUD"]
@@ -173,12 +173,11 @@ update_on_text_changed = true
 custom_arrow_step = 9666.67
 
 [node name="Mode_Slider" type="SpinBox" parent="HUD"]
-unique_name_in_owner = true
 layout_direction = 1
-offset_left = 342.5
-offset_top = 278.75
-offset_right = 514.5
-offset_bottom = 341.75
+offset_left = 277.5
+offset_top = 283.75
+offset_right = 449.5
+offset_bottom = 346.75
 size_flags_horizontal = 0
 tooltip_text = "X"
 theme = SubResource("Theme_ulh2w")
@@ -201,4 +200,4 @@ horizontal_alignment = 1
 [connection signal="value_changed" from="HUD/Center_Slider_Z" to="." method="_on_center_slider_z_value_changed"]
 [connection signal="value_changed" from="HUD/Center_Slider_Y" to="." method="_on_center_slider_y_value_changed"]
 [connection signal="value_changed" from="HUD/Center_Slider_X" to="." method="_on_center_slider_x_value_changed"]
-[connection signal="value_changed" from="HUD/Mode_Slider" to="." method="_on_center_slider_x_value_changed"]
+[connection signal="value_changed" from="HUD/Mode_Slider" to="." method="_on_mode_slider_value_changed"]
