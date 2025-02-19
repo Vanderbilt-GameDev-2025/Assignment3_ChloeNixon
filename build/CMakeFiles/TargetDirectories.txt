@@ -1,0 +1,3 @@
+/Users/chloenixon/GitHub/GameDesign/Assignment1-ChloeNixon/build/CMakeFiles/godot-cpp.dir
+/Users/chloenixon/GitHub/GameDesign/Assignment1-ChloeNixon/build/CMakeFiles/edit_cache.dir
+/Users/chloenixon/GitHub/GameDesign/Assignment1-ChloeNixon/build/CMakeFiles/rebuild_cache.dir
